@@ -1,0 +1,31 @@
+// ----------------------------------------------------------------------
+// --- CONFIGURATION file is defining all your global variables
+// ----------------------------------------------------------------------
+
+
+// Color palette
+// --------------------------------------------------
+$corporate-color-1: #222;
+$corporate-color-2: #444;
+$corporate-color-3: #666;
+$corporate-color-4: #888;
+
+$base-font-color: #000;
+$header-font-color: #000;
+$link-color: #000;
+$link-color-hover: lighten($link-color, 35%);
+
+// Fonts
+// --------------------------------------------------
+$header-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$base-font-size: 14px;
+$base-line-height: $base-font-size * 1.5;
+
+$header-font-weight: 700;
+$base-font-weight: 500;
+
+// Responsive - Breakpoints
+// --------------------------------------------------
+$max-website-width: 1200px;

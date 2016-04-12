@@ -1,0 +1,30 @@
+// ----------------------------------------------------------------------
+// --- MAIN file is importing all your existing SASS files
+// ----------------------------------------------------------------------
+
+// NORMALIZE
+// --------------------------------------------------
+@import "vendor/normalize";
+
+// CONFIG
+// --------------------------------------------------
+@import "config";
+
+// PARTIALS
+// --------------------------------------------------
+
+// Helpers
+@import "partials/helper.mixins";
+@import "partials/helper.icon-font";
+@import "partials/helper.keyframes";
+
+// Foundation
+@import "partials/foundation/foundation.base";
+@import "partials/foundation/foundation.buttons";
+@import "partials/foundation/foundation.forms";
+@import "partials/foundation/foundation.tables";
+@import "partials/foundation/foundation.layout";
+
+// Components
+@import "partials/components/*
+

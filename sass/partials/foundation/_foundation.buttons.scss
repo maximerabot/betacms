@@ -1,0 +1,18 @@
+// ----------------------------------------------------------------------
+// --- BUTTONS
+// ----------------------------------------------------------------------
+
+
+.btn {
+  display: inline-block;
+  border-radius: 7px;
+  padding: 10px 20px;
+  border: 1px solid;
+  text-decoration: none;
+  &.btn-secondary {
+    background: #aaa;
+  }
+  &.btn-tertiary {
+    background: #777;
+  }
+}
