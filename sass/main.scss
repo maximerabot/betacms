@@ -4,7 +4,7 @@
 
 // NORMALIZE
 // --------------------------------------------------
-@import "vendor/normalize";
+@import "vendor.normalize";
 
 // CONFIG
 // --------------------------------------------------
@@ -26,5 +26,5 @@
 @import "partials/foundation/foundation.layout";
 
 // Components
-@import "partials/components/*
+@import "partials/components/*;
 
