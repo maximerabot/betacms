@@ -22,7 +22,7 @@ vendor.normalize
 This file is defining all global variables like color scheme, font family, font size and breakpoints. The values are brand and project specific.
 
 ```
-config.css
+config.scss
 ```
 
 ####PARTIALS
@@ -31,36 +31,51 @@ Useful functions, icon library and keyframes for animations.
 
 ```
 // Helpers
-partials/helper.mixins.css
-partials/helper.icon-font.css
-partials/helper.keyframes.css
+helpers/helper.mixins.scss
+helpers/helper.icon-font.scss
+helpers/helper.keyframes.scss
+helpers/helper.utility.scss
 ```
+
+
 
 #####Foundation
 Defines the foundation of the project.
 
 ```
 // Foundation
-partials/foundation/foundation.base.css [only pure HTML elements like body, a, h1, img]
-partials/foundation/foundation.buttons.css [styling all different CTAs]
-partials/foundation/foundation.forms.css [form elements like input, textarea]
-partials/foundation/foundation.tables.css []
-partials/foundation/foundation.layout.css []
+foundation/foundation.base.scss [only pure HTML elements like body, a, h1, img]
+foundation/foundation.buttons.scss [styling all different CTAs]
+foundation/foundation.forms.scss [form elements like input, textarea]
+foundation/foundation.tables.scss []
 ```
 
-#####Components
-A component is a distinct, independent unit, that can be used in multiple place through the website.
+#####Layout
+Defines layout elements likes grid, header, footer, sections.
 
 ```
-// Components
-partials/components/component.header.css
-partials/components/component.navigation.css
-partials/components/component.searchbar.css
+// Layout
+layout/layout.grid.scss
+layout/layout.header.scss
+layout/layout.footer.scss
+layout/layout.hero.scss
+layout/layout.middle.scss
+layout/layout.component-container.scss
+```
+
+#####Components & Atoms
+A component is a distinct, independent unit, that can be used in multiple place through the website. An atom is a reusable element but used in context with a component.
+
+```
+// Atoms
+components/atom.user-picture.scss
+components/atom.reward-label
 ...
 
-// Child components (only used if the a lot of styles are needed)
-partials/components/component.header.navigation.css
-partials/components/component.header.searchbar.css
+// Components
+components/component.searchbar.scss
+components/component.dialog.scss
+components/component.shop-block.scss
 ...
 ```
 
@@ -79,13 +94,13 @@ Here are some real examples for components:
 
 ```
 /* component */
-.navbar {}
+.reward-label {}
 
-/* child component */
-.navbar.navbar-header {}
+/* component element */
+.reward-label.reward-label-element {}
 
 /* component modifier */
-.navbar-title--user {}
+.reward-label.reward-label_payout {}
 
 /* if used for javascript only */
 .js-icon-animation {}
@@ -98,6 +113,8 @@ Here are some real examples for components:
 - [ITCSS](https://github.com/itcss) by Harry Roberts
 - [MaintainableCSS](http://maintainablecss.com/) by Adam Silver
 - [Pattern Lab](http://patternlab.io/) by Brad Frost
+- [BEM](http://getbem.com/naming/)
+- [CSS Architecture - Sparkbox](https://seesparkbox.com/foundry/thoughtful_css_architecture)
 
 
 

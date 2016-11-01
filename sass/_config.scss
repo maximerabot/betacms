@@ -26,6 +26,14 @@ $base-line-height: $base-font-size * 1.5;
 $header-font-weight: 700;
 $base-font-weight: 500;
 
-// Responsive - Breakpoints
+// Grid variables
 // --------------------------------------------------
 $max-website-width: 1200px;
+$grid-columns: 12;
+
+// Standard Breakpoints
+// --------------------------------------------------
+$grid-breakpoint-mobile: 0;
+$grid-breakpoint-tablet: 768px;
+$grid-breakpoint-desktop: 1024px;
+$grid-breakpoint-desktophd: 1200px;
