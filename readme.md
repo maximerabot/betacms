@@ -15,7 +15,7 @@
 Makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
 
 ```
-vendor.normalize
+normalize
 ```
 
 ####CONFIG
@@ -47,7 +47,7 @@ Defines the foundation of the project.
 foundation/foundation.base.scss [only pure HTML elements like body, a, h1, img]
 foundation/foundation.buttons.scss [styling all different CTAs]
 foundation/foundation.forms.scss [form elements like input, textarea]
-foundation/foundation.tables.scss []
+foundation/foundation.tables.scss [table elements]
 ```
 
 #####Layout
@@ -55,12 +55,12 @@ Defines layout elements likes grid, header, footer, sections.
 
 ```
 // Layout
+layout/layout.middle.scss
+layout/layout.container.scss
 layout/layout.grid.scss
 layout/layout.header.scss
 layout/layout.footer.scss
 layout/layout.hero.scss
-layout/layout.middle.scss
-layout/layout.component-container.scss
 ```
 
 #####Components & Atoms
@@ -96,7 +96,7 @@ Here are some real examples for components:
 /* component */
 .reward-label {}
 
-/* component element */
+/* component sub-element */
 .reward-label.reward-label-element {}
 
 /* component modifier */
