@@ -10,9 +10,9 @@
 
 // HELPERS
 // --------------------------------------------------
-@import "partials/helper.mixins";
-@import "partials/helper.icon-font";
-@import "partials/helper.keyframes";
+@import "partials/helpers/helper.mixins";
+@import "partials/helpers/helper.icon-font";
+@import "partials/helpers/helper.keyframes";
 
 // FOUNDATION
 // --------------------------------------------------
@@ -28,5 +28,5 @@
 
 // COMPONENTS
 // --------------------------------------------------
-@import "partials/components/*;
+@import "partials/components/component.component-name";
 
