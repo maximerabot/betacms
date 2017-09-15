@@ -83,7 +83,7 @@ We will avoid using IDs since the specificity is too high and we can’t overrid
 
 
 ### Example
-
+This example of naming convention is based on the BEM approach:
 
 ```html
 // Component
