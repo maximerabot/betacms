@@ -27,6 +27,7 @@ config.scss
 
 #### PARTIALS
 ##### Helpers
+
 Useful functions, icon library and keyframes for animations.
 
 ```
@@ -34,45 +35,41 @@ Useful functions, icon library and keyframes for animations.
 helpers/helper.mixins.scss
 helpers/helper.icon-font.scss
 helpers/helper.keyframes.scss
-helpers/helper.utility.scss
 ```
-
-
+---
 
 ##### Foundation
 Defines the foundation of the project.
 
 ```
 // Foundation
-foundation/foundation.base.scss [only pure HTML elements like body, a, h1, img]
-foundation/foundation.buttons.scss [styling all different CTAs]
-foundation/foundation.forms.scss [form elements like input, textarea]
-foundation/foundation.tables.scss [table elements]
+foundation/foundation.base.scss
+foundation/foundation.buttons.scss
+foundation/foundation.forms.scss
+foundation/foundation.tables.scss
 ```
+---
 
 ##### Layout
 Defines layout elements likes grid, header, footer, sections.
 
 ```
 // Layout
-layout/layout.middle.scss
 layout/layout.container.scss
 layout/layout.grid.scss
-layout/layout.header.scss
-layout/layout.footer.scss
-layout/layout.hero.scss
 ```
+---
 
 ##### Components & Atoms
 A component is a distinct, independent unit, that can be used in multiple place through the website. An atom is a reusable element but used in context with a component.
 
 ```
-// Atoms
+// Atoms - Examples
 components/atom.user-picture.scss
 components/atom.reward-label
 ...
 
-// Components
+// Components - Examples
 components/component.searchbar.scss
 components/component.dialog.scss
 components/component.shop-block.scss
@@ -84,29 +81,22 @@ Name something based on what it is, not how it looks or behaves. Semantic class 
 
 We will avoid using IDs since the specificity is too high and we can’t override an ID selector’s style with a class name selector easily.
 
-1. components parts should always start with the component name
-2. there is a core structure that should not be changed (if, then only from the senior frontends)
-3. some elements can be extended by adding double dash to the class (example: .dialog-title--warning)
+
+### Example
 
 
-## Examples
-Here are some real examples for components:
+```html
+// Component
+<div class="block">...</div>
 
-```
-/* component */
-.reward-label {}
+// Component sub-element
+<div class="block">
+  ...
+  <span class="block__elem"></span>
+</div>
 
-/* component sub-element */
-.reward-label.reward-label-element {}
-
-/* component modifier */
-.reward-label.reward-label_payout {}
-
-/* if used for javascript only */
-.js-icon-animation {}
-
-/* if used for mobile only */
-.mobile-price-table {}
+// Component modifier
+<div class="block block--mod">...</div>
 ```
 
 ## Resources
