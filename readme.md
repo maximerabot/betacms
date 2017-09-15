@@ -11,22 +11,22 @@
 ## CSS File structure
 **Goal is to write CSS in specificity order from generic to explicit (based on the ITCSS methodology). Progressively adding, never ondoing styles.**
 
-####NORMALIZE
+#### NORMALIZE
 Makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
 
 ```
-normalize
+normalize.scss
 ```
 
-####CONFIG
+#### CONFIG
 This file is defining all global variables like color scheme, font family, font size and breakpoints. The values are brand and project specific.
 
 ```
 config.scss
 ```
 
-####PARTIALS
-#####Helpers
+#### PARTIALS
+##### Helpers
 Useful functions, icon library and keyframes for animations.
 
 ```
@@ -39,7 +39,7 @@ helpers/helper.utility.scss
 
 
 
-#####Foundation
+##### Foundation
 Defines the foundation of the project.
 
 ```
@@ -50,7 +50,7 @@ foundation/foundation.forms.scss [form elements like input, textarea]
 foundation/foundation.tables.scss [table elements]
 ```
 
-#####Layout
+##### Layout
 Defines layout elements likes grid, header, footer, sections.
 
 ```
@@ -63,7 +63,7 @@ layout/layout.footer.scss
 layout/layout.hero.scss
 ```
 
-#####Components & Atoms
+##### Components & Atoms
 A component is a distinct, independent unit, that can be used in multiple place through the website. An atom is a reusable element but used in context with a component.
 
 ```
@@ -115,6 +115,3 @@ Here are some real examples for components:
 - [Pattern Lab](http://patternlab.io/) by Brad Frost
 - [BEM](http://getbem.com/naming/)
 - [CSS Architecture - Sparkbox](https://seesparkbox.com/foundry/thoughtful_css_architecture)
-
-
-
