@@ -1,0 +1,38 @@
+// ----------------------------------------------------------------------
+// --- LAYOUT defines your main layout blocks
+// ----------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------
+// --- LAYOUT defines your main layout blocks
+// ----------------------------------------------------------------------
+
+
+// Sections
+section {
+  padding: 35px 0;
+  @include respond-to(min-width, $grid-breakpoint-desktophd) {
+    padding: 100px 0;
+  }
+}
+
+// Container
+// :Holds all elements and controls the page's maximum width.
+// :Using a container will make designing for responsive easier!
+// -------------------------------------------------------------------
+.container {
+  max-width: $max-website-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Grid System
+.grid-system {
+  @include display-grid();
+  grid-template-columns: repeat($grid-columns-mobile, 1fr);
+  grid-gap: 0 $grid-columns-gutter-mobile;
+  @include respond-to(min-width, $grid-breakpoint-tablet) {
+    grid-template-columns: repeat($grid-columns-desktop, 1fr);
+    grid-gap: 0 $grid-columns-gutter-desktop;
+  }
+}

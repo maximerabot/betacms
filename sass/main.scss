@@ -11,7 +11,6 @@
 // HELPERS
 // --------------------------------------------------
 @import "partials/helpers/helper.mixins";
-@import "partials/helpers/helper.icon-font";
 @import "partials/helpers/helper.keyframes";
 
 // FOUNDATION
@@ -23,8 +22,7 @@
 
 // LAYOUT
 // --------------------------------------------------
-@import "partials/layout/layout.container";
-@import "partials/layout/layout.grid";
+@import "partials/layout/layout";
 
 // COMPONENTS
 // --------------------------------------------------

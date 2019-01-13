@@ -16,67 +16,82 @@ body {
   font-weight: $base-font-weight;
   color: $base-font-color;
   font-family: $base-font;
+  @include respond-to(min-width, $grid-breakpoint-desktophd) {
+    font-size: $base-font-size-desktop;
+  }
 }
 
-// Magic numbers for creating your typographic scale/hierarchy
-// - Golden ratio = 1,618
-// - European Typeface Scale: 6,7,8,9,10,11,12,14,16,18,21,24,36,48,60,72
-// - Fibonacci sequence: 16,24,40,64,104 (achieve the divine proportion and is applied for more aesthetically design)
-// - Visual Type Scale: http://type-scale.com/
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font;
   font-weight: $header-font-weight;
-  color: $header-font-color;
   margin: 0;
-  text-rendering: optimizelegibility;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: $heading-h1;
   line-height: 1.2em;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.3em;
+  @include respond-to(min-width, $grid-breakpoint-desktophd) {
+    font-size: $heading-h1-desktop;
+  }
 }
 
 h2 {
-  font-size: 26px;
+  font-size: $heading-h2;
   line-height: 1.2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
+  @include respond-to(min-width, $grid-breakpoint-desktophd) {
+    font-size: $heading-h2-desktop;
+  }
 }
 
 h3 {
-  font-size: 21px;
+  font-size: $heading-h3;
   line-height: 1.2em;
   margin-bottom: 0.3em;
+  @include respond-to(min-width, $grid-breakpoint-desktophd) {
+    font-size: $heading-h3-desktop;
+  }
 }
 
 h4 {
-  font-size: 18px;
+  font-size: $heading-h4;
   line-height: 1.12em;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.2em;
+  @include respond-to(min-width, $grid-breakpoint-desktophd) {
+    font-size: $heading-h4-desktop;
+  }
 }
 
 h5 {
-  font-size: 16px;
+  font-size: $heading-h5;
   line-height: 1.1em;
   margin-bottom: 0.3em;
+  @include respond-to(min-width, $grid-breakpoint-desktophd) {
+    font-size: $heading-h5-desktop;
+  }
 }
 
 h6 {
-  font-size: 14px;
+  font-size: $heading-h6;
   line-height: 1.1em;
   margin-bottom: 0.3em;
+  @include respond-to(min-width, $grid-breakpoint-desktophd) {
+    font-size: $heading-h6-desktop;
+  }
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1.5em;
   line-height: $base-line-height;
+  // max-width: 570px;
 }
 
 ul, ol {
-  list-style-position: outside;
-  margin-bottom: 1.5em;
-  padding: 0 0 0 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 li {
@@ -94,10 +109,10 @@ a {
   &:hover {
     color: $link-color-hover;
   }
-  // Very useful for link state on touch devices
-  &:active {
-
-  }
 }
 
-img { }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

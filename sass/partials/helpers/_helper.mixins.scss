@@ -144,56 +144,10 @@
 //   @include flex(1 1 100%);
 // }
 
-@mixin columns($args) {
-  -webkit-columns: $args;
-  -moz-columns: $args;
-  -ms-columns: $args;
-  -o-columns: $args;
-  columns: $args;
+
+// GRID LAYOUT
+// -------------------------------------------------------------------
+@mixin display-grid() {
+  display: -ms-grid;
+  display: grid;
 }
-// --- Example ---
-//
-// .element {
-//   @include columns(100px 3);
-// }
-
-@mixin column-gap($args) {
-  -webkit-column-gap: $args;
-  -moz-column-gap: $args;
-  -ms-column-gap: $args;
-  -o-column-gap: $args;
-  column-gap: $args;
-}
-// --- Example ---
-//
-// .element {
-//   @include column-gap(20px);
-// }
-
-@mixin column-rule($args) {
-  -webkit-column-rule: $args;
-  -moz-column-rule: $args;
-  -ms-column-rule: $args;
-  -o-column-rule: $args;
-  column-rule: $args;
-}
-// --- Example ---
-//
-// .element {
-//   @include column-rule(4px outset #ff00ff);
-// }
-
-@mixin column-span($args) {
-  -webkit-column-span: $args;
-  -moz-column-span: $args;
-  -ms-column-span: $args;
-  -o-column-span: $args;
-  column-span: $args;
-}
-// --- Example ---
-//
-// .element {
-//   @include column-span(all);
-// }
-
-

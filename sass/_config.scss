@@ -3,35 +3,64 @@
 // ----------------------------------------------------------------------
 
 
-// Color palette
-// --------------------------------------------------
-$corporate-color-1: #000;
-$corporate-color-2: #000;
-
-$base-font-color: #000;
-$header-font-color: #000;
-$link-color: #000;
-$link-color-hover: lighten($link-color, 35%);
-
-// Fonts
-// --------------------------------------------------
-$header-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-$base-font-size: 14px;
-$base-line-height: $base-font-size * 1.5;
-
-$header-font-weight: 700;
-$base-font-weight: 500;
-
-// Grid variables
+// GRID SYSTEM
 // --------------------------------------------------
 $max-website-width: 1200px;
-$grid-columns: 12;
+$grid-columns-desktop: 12;
+$grid-columns-mobile: 6;
+$grid-columns-gutter-desktop: 20px;
+$grid-columns-gutter-mobile: 15px;
 
-// Standard Breakpoints
+// BREAKPOINTS
 // --------------------------------------------------
 $grid-breakpoint-mobile: 0;
 $grid-breakpoint-tablet: 768px;
 $grid-breakpoint-desktop: 1024px;
 $grid-breakpoint-desktophd: 1200px;
+
+// COLORS
+// --------------------------------------------------
+$primary-color-1: #FF0000;
+$primary-color-2: #00ff00;
+$primary-color-3: #0000ff;
+
+$base-font-color: #111;
+$header-font-color: #111;
+$link-color: #111;
+$link-color-hover: darken($link-color, 55%);
+
+// TYPOGRAPHY
+// --------------------------------------------------
+$header-font: Helvetica, sans-serif;
+$base-font: Georgia, serif;
+
+// Mobile
+$heading-h1: 34px;
+$heading-h2: 25px;
+$heading-h3: 18px;
+$heading-h4: 16px;
+$heading-h5: 14px;
+$heading-h6: 12px;
+
+// Desktop
+$heading-h1-desktop: 50px;
+$heading-h2-desktop: 35px;
+$heading-h3-desktop: 24px;
+$heading-h4-desktop: 20px;
+$heading-h5-desktop: 18px;
+$heading-h6-desktop: 16px;
+
+$header-font-weight: 700;
+$base-font-weight: 400;
+
+$base-font-size: 16px;
+$base-font-size-desktop: 18px;
+
+$base-line-height: 1.5em;
+
+
+// Magic numbers for creating your typographic scale/hierarchy
+// - Golden ratio = 1,618
+// - European Typeface Scale: 6,7,8,9,10,11,12,14,16,18,21,24,36,48,60,72
+// - Fibonacci sequence: 16,24,40,64,104 (achieve the divine proportion and is applied for more aesthetically design)
+// - Visual Type Scale: http://type-scale.com/
