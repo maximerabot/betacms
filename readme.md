@@ -1,3 +1,9 @@
+| LAST UPDATES (13-01-2019)|
+| ------------- |
+|Added CSS GRID LAYOUT module|
+|Optimized typography rules for DESKTOP and MOBILE| 
+
+
 # FRONTEND ARCHITECTURE
 
 ### Main goals are
@@ -28,12 +34,11 @@ config.scss
 #### PARTIALS
 ##### Helpers
 
-Useful functions, icon library and keyframes for animations.
+Useful functions and keyframes for animations.
 
 ```
 // Helpers
 helpers/helper.mixins.scss
-helpers/helper.icon-font.scss
 helpers/helper.keyframes.scss
 ```
 ---
@@ -51,12 +56,11 @@ foundation/foundation.tables.scss
 ---
 
 ##### Layout
-Defines layout elements likes grid, header, footer, sections.
+Defines layout elements likes sections and grids.
 
 ```
 // Layout
-layout/layout.container.scss
-layout/layout.grid.scss
+layout/layout.scss
 ```
 ---
 
